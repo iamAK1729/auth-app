@@ -5,7 +5,7 @@ import { createUploadLink } from "apollo-upload-client";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
-const SERVER_BASE_URL = process.env.SERVER_BASE_URL;
+const SERVER_BASE_URL = "http://localhost:4000";
 
 const uploadLink = createUploadLink({
   uri: `${SERVER_BASE_URL}/graphql`,

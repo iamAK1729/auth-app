@@ -73,7 +73,7 @@ const Signup = (props) => {
 
   const setImage = (newImage) => {
     if (image) {
-      cleanup();
+      _setImage(null);
     }
     _setImage(newImage);
   };

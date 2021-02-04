@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 
 import "./styles.less";
 
-const SERVER_BASE_URL = process.env.SERVER_BASE_URL;
+const SERVER_BASE_URL = "http://localhost:4000";
 
 const Dashboard = () => {
   const [redirectToLogin, setLoginRedirection] = useState(false);

@@ -16,7 +16,6 @@ ENV DATABASE_URL "$DATABASE_URL"
 
 RUN npm install
 
-RUN prisma migrate dev --preview-feature
 RUN prisma generate
 
 CMD ["npm", "start" ]

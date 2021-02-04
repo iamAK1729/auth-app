@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stagewood</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        position: relative;
+      }
+      .bg-root {
+        /* background-image: url("bg.jpg"); */
+        height: 100%;
+        display: flex;
+      }
+      #app {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+      video {
+        flex: 1;
+        object-fit: cover;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="bg-root">
+      <video autoplay muted loop id="myVideo">
+        <source src="10_consert_07_applaud_preview.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+
+    <div id="app"></div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.login-page-container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 200px;
+
+  .animation {
+    width: 520px;
+    height: 420px;
+    transition: width 1s linear 2s, height 1s linear 2s;
+    &.sign-up {
+      width: 320px;
+      height: 500px;
+    }
+    &.login {
+      width: 520px;
+      height: 420px;
+    }
+  }
+}
